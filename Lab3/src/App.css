@@ -1,0 +1,157 @@
+:root {
+  --primary: #333;
+  --secondary: #666;
+  --bg: #fff;
+  --card-bg: #f5f5f5;
+  --text: #333;
+  --border: #ddd;
+  --spacing: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  padding: var(--spacing);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid var(--border);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 0 0 10px 0;
+  color: var(--secondary);
+}
+
+.header nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing);
+}
+
+.card {
+  background: var(--card-bg);
+  padding: var(--spacing);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.card h2 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: var(--secondary);
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}
+
+.stats {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 2px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff;
+  background: #999;
+}
+
+.sort button {
+  margin-right: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+}
+
+.sort {
+  margin-bottom: var(--spacing);
+  padding: 8px;
+}
+
+.leader {
+  text-align: center;
+  font-size: medium;
+  margin-top: 20px;
+}
+
+.fav{
+  text-align: center;
+  font-size: medium;
+  margin-top: 20px;
+}
+
+.favourite-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.favourite-btn.favorited {
+  color: red;
+}
